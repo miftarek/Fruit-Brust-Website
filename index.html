@@ -11,12 +11,71 @@
     <link href="https://fonts.googleapis.com/css2?family=Lato&display=swap" rel="stylesheet">
     <title>Fruit Burst Website</title>
     <style>
-        font-family: 'Lato', sans-serif;
     </style>
 </head>
 
 <body>
-
+<header class="container mx-auto">
+    <!-- Navbar section start here -->
+    <nav>
+        <div class="navbar bg-red-500 rounded-full px-5 text-white my-12">
+            <div class="navbar-start">
+              <div>
+                <ul class="flex gap-5">
+                  <li><a>Home</a></li>
+                  <li><a>About Us</a></li>
+                  <li><a>Shop</a></li>
+                  <li><a>All Fruits</a></li>
+                </ul>
+              </div>
+            </div>
+            <div class="navbar-center text-5xl">
+              <a><img class="inline mx-3" src="./images/logo.png" alt="">Fruit Burst</a>
+            </div>
+            <div class="navbar-end">
+              
+              </div>
+            <div class="flex-none gap-2">
+                <div class="form-control">
+                  <input type="text" placeholder="Search" class="input input-bordered md:w-auto" />
+                </div> 
+          </div>
+        </div>
+    </nav>
+    <!-- Banner Section Start Here -->
+    <div class="carousel w-full">
+        <div id="slide1" class="carousel-item relative w-full">
+          <img src="./images/banner1.png" class="w-full" />
+          <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
+            <a href="#slide4" class="btn btn-circle">❮</a> 
+            <a href="#slide2" class="btn btn-circle">❯</a>
+          </div>
+        </div> 
+        <div id="slide2" class="carousel-item relative w-full">
+          <img src="./images/banner2.png" class="w-full" />
+          <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
+            <a href="#slide1" class="btn btn-circle">❮</a> 
+            <a href="#slide3" class="btn btn-circle">❯</a>
+          </div>
+        </div> 
+        <div id="slide3" class="carousel-item relative w-full">
+          <img src="./images/banner3.png" class="w-full" />
+          <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
+            <a href="#slide2" class="btn btn-circle">❮</a> 
+            <a href="#slide4" class="btn btn-circle">❯</a>
+          </div>
+        </div> 
+        <div id="slide4" class="carousel-item relative w-full">
+          <img src="./images/banner4.png" class="w-full" />
+          <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
+            <a href="#slide3" class="btn btn-circle">❮</a> 
+            <a href="#slide1" class="btn btn-circle">❯</a>
+          </div>
+        </div>
+      </div>
+</header>
+<main></main>
+<footer></footer>
 </body>
 
 </html>
