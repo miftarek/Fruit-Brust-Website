@@ -10,6 +10,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Lato&display=swap" rel="stylesheet">
     <title>Fruit Burst Website</title>
+    <script src="https://kit.fontawesome.com/8221171c29.js" crossorigin="anonymous"></script>
     <style>
     </style>
 </head>
@@ -35,26 +36,31 @@
                 <div class="navbar-end">
 
                 </div>
-                <div class="flex-none gap-2">
-                    <div class="form-control">
-                        <input type="text" placeholder="Search" class="input input-bordered md:w-auto" />
-                    </div>
+                <div>
+                    <div class="flex-none gap-2">
+                        <div class="form-control flex-row items-center pr-5">
+                          <input type="text" placeholder="Search" class="input input-bordered w-24 md:w-auto pr-5" />
+                          <button>
+                            <i class="fa-solid fa-magnifying-glass -ml-5 text-black"></i>
+                          </button>
+                        </div>                  
                 </div>
             </div>
         </nav>
         <!-- Banner Section Start Here -->
-        <div class="carousel w-full">
+        <div class="carousel w-full flex">
             <!-- First Slider -->
-            <div id="slide1" class="carousel-item relative w-full opacity-75">
-                <img src="./images/banner1.png" class="w-full" />
+            <div id="slide1" class="carousel-item w-full relative bg-black ">
+                <img class="absolute z-0 w-full h-full opacity-50" src="./images/banner1.png" alt="">
+                
                 <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
                     <a href="#slide4" class="btn btn-circle">❮</a>
                     <a href="#slide2" class="btn btn-circle">❯</a>
                 </div>
             </div>
             <!-- Second Slider -->
-            <div id="slide2" class="carousel-item relative w-full">
-                <img src="./images/banner2.png" class="w-full" />
+            <div id="slide2" class="carousel-item relative w-full ">
+                <img class="" src="./images/banner2.png" class="w-full" />
                 <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
                     <a href="#slide1" class="btn btn-circle">❮</a>
                     <a href="#slide3" class="btn btn-circle">❯</a>
@@ -176,7 +182,7 @@
             </div>
             <!-- Second fruits -->
             <div class="border-2 py-5 w-60 rounded-lg">
-                <img class="block mx-auto" src="./images/fruit6.png" alt="">
+                <img class="block mx-auto" src="./images/fruit7.png" alt="">
                 <h3 class="my-3">12.90$ - 18.85$</h3>
                 <hr class="w-48 mx-auto">
                 <p class="my-3">Apples</p>
@@ -209,10 +215,12 @@
                         </div>
                     </form>
                 </dialog>
+
+                
             </div>
             <!-- Third Fruits -->
             <div class="border-2 py-5 w-60 rounded-lg">
-                <img class="block mx-auto" src="./images/fruit6.png" alt="">
+                <img class="block mx-auto" src="./images/fruit8.png" alt="">
                 <h3 class="my-3">12.90$ - 18.85$</h3>
                 <hr class="w-48 mx-auto">
                 <p class="my-3">Apples</p>
@@ -228,7 +236,7 @@
                 <button class="btn" onclick="my_modal_5.showModal()">Details</button>
                 <dialog id="my_modal_5" class="modal modal-bottom sm:modal-middle">
                     <form method="dialog" class="modal-box">
-                        <img src="./images/fruit6.png" alt="">
+                        <img src="./images/fruit8.png" alt="">
                         <h3 class="font-bold text-lg">Apples</h3>
                         <p class="py-4">Professional employees are there for you to pick the most amazing and fresh fruits.</p>
                         <div class="rating">
@@ -248,7 +256,7 @@
             </div>
             <!-- Fourth Fruit -->
             <div class="border-2 py-5 w-60 rounded-lg">
-                <img class="block mx-auto" src="./images/fruit6.png" alt="">
+                <img class="block mx-auto" src="./images/fruit9.png" alt="">
                 <h3 class="my-3">12.90$ - 18.85$</h3>
                 <hr class="w-48 mx-auto">
                 <p class="my-3">Apples</p>
@@ -287,7 +295,7 @@
         <button class="btn btn-primary my-24 block mx-auto">Shop All</button>
        </div> 
        <!-- Meet the team section start here -->
-       <div class="w-full px-20 py-20 text-white" style="background-image: url(./images/team.png);">
+       <div class="w-full px-20 py-20 text-white bg-no-repeat bg-slate-500 bg-blend-overlay" style="background-image: url(./images/team.png);">
         <h2>
             Meet the team section
         </h2>
@@ -299,26 +307,136 @@
                 <img src="./images/member1.png" alt="">
                 <h2>Awlad Hossain</h2>
                 <p>Fruits Expert</p>
+                <i class="fa-brands fa-facebook"></i>
+                <i class="fa-brands fa-square-twitter"></i>
+                <i class="fa-brands fa-linkedin"></i>
             </div>
             <div>
-                <img src="./images/member1.png" alt="">
-                <h2>Awlad Hossain</h2>
+                <img src="./images/member2.png" alt="">
+                <h2>Safia Chowdhury</h2>
                 <p>Fruits Expert</p>
+                <i class="fa-brands fa-facebook"></i>
+                <i class="fa-brands fa-square-twitter"></i>
+                <i class="fa-brands fa-linkedin"></i>
             </div>
             <div>
-                <img src="./images/member1.png" alt="">
-                <h2>Awlad Hossain</h2>
+                <img src="./images/member3.png" alt="">
+                <h2>Rokib Hossain</h2>
                 <p>Fruits Expert</p>
+                <i class="fa-brands fa-facebook"></i>
+                <i class="fa-brands fa-square-twitter"></i>
+                <i class="fa-brands fa-linkedin"></i>
             </div>
             <div>
-                <img src="./images/member1.png" alt="">
-                <h2>Awlad Hossain</h2>
+                <img src="./images/member4.png" alt="">
+                <h2>Chaity</h2>
                 <p>Fruits Expert</p>
+                <i class="fa-brands fa-facebook"></i>
+                <i class="fa-brands fa-square-twitter"></i>
+                <i class="fa-brands fa-linkedin"></i>
             </div>
         </div>
        </div>
+       <section>
+        <div class="my-10 text-center">
+            <h2>
+                Why Choose Us
+            </h2>
+            <p>
+                Contrary to popular belief, is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old.
+            </p>
+        </div>
+        <div class="flex gap-3 items-center">
+            <div class="">
+                <div>
+                    <i></i>
+                    <h3>Dedicated Team</h3>
+                    <hr class="w-32">
+                    <p>
+                        Professional employees are there for you to pick the most amazing and fresh fruits.
+                    </p>
+                </div>
+                <div class="my-5">
+                    <i></i>
+                    <h3>Dedicated Team</h3>
+                    <hr class="w-32">
+                    <p>
+                        Professional employees are there for you to pick the most amazing and fresh fruits.
+                    </p>
+                </div>
+                <div>
+                    <i></i>
+                    <h3>Dedicated Team</h3>
+                    <hr class="w-32">
+                    <p>
+                        Professional employees are there for you to pick the most amazing and fresh fruits.
+                    </p>
+                </div>
+            </div>
+
+            <div class="">
+                <img src="./images/whychoose1.png" alt="">
+            </div>
+            <div class="">
+                <div>
+                    <h3>
+                        Integrated Supplier
+                    </h3>
+                    <hr class="w-32">
+                    <p>
+                        Professional employees are there for you to pick the most amazing and fresh fruits.
+                    </p>
+                    <i></i>
+                </div>
+                <div class="my-5">
+                    <h3>
+                        Integrated Supplier
+                    </h3>
+                    <hr class="w-32">
+                    <p>
+                        Professional employees are there for you to pick the most amazing and fresh fruits.
+                    </p>
+                    <i></i>
+                </div>
+                <div>
+                    <h3>
+                        Integrated Supplier
+                    </h3>
+                    <hr class="w-32">
+                    <p>
+                        Professional employees are there for you to pick the most amazing and fresh fruits.
+                    </p>
+                    <i></i>
+                </div>
+            </div>
+        </div>
+       </section>
     </main>
-    <footer></footer>
+    <footer class="footer footer-center p-10 bg-black text-base-content rounded text-white">
+        <div class="flex">
+            <img src="./images/logo.png" alt="">
+            <h2>Fruit Burst</h2>
+        </div>
+        <div class="grid grid-flow-col gap-4">
+          <a class="link link-hover">About us</a> 
+          <a class="link link-hover">Contact</a> 
+          <a class="link link-hover">Jobs</a> 
+          <a class="link link-hover">Press kit</a>
+        </div> 
+        <div>
+          <div class="grid grid-flow-col gap-4">
+            <a><i class="fa-brands fa-square-twitter"></i></a> 
+            <a><i class="fa-brands fa-facebook"></i></a>
+            <a><i class="fa-brands fa-youtube"></i></a>
+            <a><i class="fa-brands fa-linkedin"></i></a>
+            <a><i class="fa-brands fa-instagram"></i></a>
+            <a><i class="fa-brands fa-apple"></i></a>
+          </div>
+        </div> 
+        <div>
+          <p>Copyright © 2023 - All right reserved by ACME Industries Ltd</p>
+        </div>
+      </footer>
 </body>
 
 </html>
