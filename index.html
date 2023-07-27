@@ -197,7 +197,7 @@
                 </div>
                 <br>
                 <!-- Open the modal using ID.showModal() method -->
-                <button class="btn" onclick="showModal()">Details</button>
+                <button class="btn" onclick="showModal('my_modal_5')">Details</button>
                 <dialog id="my_modal_5" class="modal modal-bottom sm:modal-middle">
                     <form method="dialog" class="modal-box">
                         <img src="./images/fruit6.png" alt="">
@@ -234,8 +234,8 @@
                 </div>
                 <br>
                 <!-- Open the modal using ID.showModal() method -->
-                <button class="btn" onclick="showModal()">Details</button>
-                <dialog id="my_modal_5" class="modal modal-bottom sm:modal-middle">
+                <button class="btn" onclick="showModal('my_modal_6')">Details</button>
+                <dialog id="my_modal_6" class="modal modal-bottom sm:modal-middle">
                     <form method="dialog" class="modal-box">
                         <img src="./images/fruit7.png" alt="">
                         <h3 class="font-bold text-lg">Apples</h3>
@@ -273,8 +273,8 @@
                 </div>
                 <br>
                 <!-- Open the modal using ID.showModal() method -->
-                <button class="btn" onclick="showModal()">Details</button>
-                <dialog id="my_modal_5" class="modal modal-bottom sm:modal-middle">
+                <button class="btn" onclick="showModal('my_modal_7')">Details</button>
+                <dialog id="my_modal_7" class="modal modal-bottom sm:modal-middle">
                     <form method="dialog" class="modal-box">
                         <img src="./images/fruit8.png" alt="">
                         <h3 class="font-bold text-lg">Apples</h3>
@@ -310,8 +310,8 @@
                 </div>
                 <br>
                 <!-- Open the modal using ID.showModal() method -->
-                <button class="btn" onclick="showModal()">Details</button>
-                <dialog id="my_modal_5" class="modal modal-bottom sm:modal-middle">
+                <button class="btn" onclick="showModal('my_modal_8')">Details</button>
+                <dialog id="my_modal_8" class="modal modal-bottom sm:modal-middle">
                     <form method="dialog" class="modal-box">
                         <img src="./images/fruit9.png" alt="">
                         <h3 class="font-bold text-lg">Apples</h3>
@@ -477,16 +477,18 @@
     <footer class="footer footer-center p-10 bg-black text-base-content rounded text-white">
         <div class="flex">
             <img src="./images/logo.png" alt="">
-            <h2>Fruit Burst</h2>
+            <h2 class="text-3xl">Fruit Burst</h2>
         </div>
-        <div class="grid grid-flow-col gap-4">
+        <div class="grid lg:grid-flow-col sm:grid-flow-row gap-4">
+            <a class="link link-hover">Home</a>
             <a class="link link-hover">About us</a>
-            <a class="link link-hover">Contact</a>
-            <a class="link link-hover">Jobs</a>
-            <a class="link link-hover">Press kit</a>
+            <a class="link link-hover">Shop</a>
+            <a class="link link-hover">All Fruits</a>
+            <a class="link link-hover">Support</a>
+            <a class="link link-hover">My Account</a>
         </div>
         <div>
-            <div class="grid grid-flow-col gap-4">
+            <div class="grid grid-flow-col gap-4 text-2xl">
                 <a><i class="fa-brands fa-square-twitter"></i></a>
                 <a><i class="fa-brands fa-facebook"></i></a>
                 <a><i class="fa-brands fa-youtube"></i></a>
@@ -496,7 +498,7 @@
             </div>
         </div>
         <div>
-            <p>Copyright © 2023 - All right reserved by ACME Industries Ltd</p>
+            <p>Copyright © 2023 - All right reserved by Programming Hero</p>
         </div>
     </footer>
     <!-- This Script Section I have Collected for Modal Popup Active in All Type of Browser -->
@@ -506,17 +508,18 @@
             // Polyfill to support dialog in Chrome
             document.createElement('dialog');
         }
-
+    
         // Function to show the modal
-        function showModal() {
-            var modal = document.getElementById('my_modal_5');
+        function showModal(id) {
+            var modal = document.getElementById(id);
             if (modal) {
                 if (!modal.open) {
                     modal.showModal();
                 }
             }
         }
-
+    
+         
         // Function to close the modal
         function closeModal() {
             var modal = document.getElementById('my_modal_5');
@@ -526,6 +529,7 @@
                 }
             }
         }
+    
     </script>
 
 </body>
